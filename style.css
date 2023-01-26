@@ -1,0 +1,177 @@
+/*Variáveis das cores*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo:#00030C;
+    --fonte-principal: 'inter';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS do corpo da página*/
+body {
+    background: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.conteiner__caixa {
+    margin:0 6em;
+}
+
+.conteiner__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.conteiner__imagem {
+    width: 348px;
+    height: 100px;
+    margin:1em 0 2em 0;
+
+}
+
+.conteiner__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.conteiner__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+/*conteúdo abaixo do background// section 2 */
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza-secundario);
+    
+}
+/*section 3 */
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.conteiner__descricao {
+    padding: 2em;
+}
+/*section 4*/
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+/*Footer*/
+.rodape {
+    text-align: center;
+    margin:0 6em
+}
+
+.rodape__logo {
+    margin-bottom: 2em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.lista__link {
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 16px;
+}
+
+.rodape__texto {
+    margin-bottom: 2em;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape__lista a:hover {
+    color: #97c0f3;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.rodape__lista a:active {
+    color: deeppink;
+}
+
+.conteiner__botao:hover {
+    background-color: #97c0f3;
+    color: black;
+}
+
+
+
+
+
